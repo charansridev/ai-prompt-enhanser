@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prompt Enhancer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">⚡</div>
+        <nav>
+          <ul>
+            <li>🔧</li>
+            <li>📝</li>
+            <li>📁</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-panel">
+        <div class="prompt-preview" id="responseBox">
+          <p id="enhancedPrompt">Enhanced prompt will appear here...</p>
+        </div>
+        <div class="input-panel">
+          <textarea
+            id="userInput"
+            placeholder="Enter your raw prompt..."
+          ></textarea>
+          <button onclick="sendMessage()">Enhance ✨</button>
+        </div>
+      </main>
+
+      <!-- Right Panel -->
+      <aside class="right-panel">
+        <div class="section">
+          <h4>Model</h4>
+          <p>LLaMA 4 Scout</p>
+        </div>
+        <div class="section">
+          <h4>Status</h4>
+          <p>Idle 💤</p>
+        </div>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
